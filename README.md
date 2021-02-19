@@ -1,8 +1,6 @@
 # Farm-Auction
 A web application to let farmer auction their crop online.
 
-(Filenames are vehicles as it was developed previously for vehicles. Bikes -> Fruits, Cars -> Vegetables).
-
 ## Stakeholders: 
 Buyer, Administrator and Seller (farmer) .
 
@@ -16,7 +14,6 @@ Various crop information such as crop type, soil type, region, state, harvest da
 should be added. He also accepts payment from the buyer and thus allows him to bid.
 ## Seller (farmer):
 Seller also has to register and create an account. He can also add crop, and track the live bids on his crop.
-We developed this project for Smart India Hackathon, 2020, in ‘agriculture’ domain.
 
 Domain: Web Development
 
@@ -27,7 +24,6 @@ Scripting language: HTML, CSS, JavaScript
 Database: MySQL.
 
 Still in process! Bugs present.
-
 
 
 Currently developing farmer dashboard, so that farmer can add produce, rather than administrator, and let the administrator rectify, accept or reject the produce added. Also, thinking of some ML integration.
