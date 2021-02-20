@@ -100,14 +100,43 @@ if(isset($_POST["submit"])){
 	} else {
 		if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
 			$SESSION["message"] = "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+
+?>
+		<script>
+    // Predict
+    //$('#btn-predict').click(function () {
+		
+        var form_data = new FormData(<?php $target_file ?>);
+
+        // Make prediction by calling api /predict
+        $.ajax({
+            type: 'POST',
+            url: 'http://localhost:5000/predict',
+            data: form_data,
+            contentType: false,
+            cache: false,
+            processData: false,
+            async: false,
+            success: function (data) {
+                // Get and display the result
+                //$('.loader').hide();
+                //$('#result').fadeIn(600);
+				//$('#result').text(' Result:  ' + data);
+				prediction: data
+				alert(prediction),
+                console.log('Success!');
+            },
+		});
+	//});
+	</script>
+	<?php
 			
 		} else {
 			$SESSION["message"] = "Sorry, there was an error uploading your file.";
 		}
 	}
 }	
-	
-	
+
 	
 	
 	if($okFlag){
@@ -120,9 +149,9 @@ if(isset($_POST["submit"])){
 		$type=$_REQUEST["type"];
 		$price=$_REQUEST["price"];
 		$image=$newName;
+		$prediction=$_POST['prediction'];
 
-
-		$sql="INSERT INTO `vehicle`(  `name`, `type`,`email`, `catagory`, `startDate`, `EndDate`, `image`,`price`, `status`) VALUES ( '$name','$type','$email','$catagory','$startDate','$EndDate','$image','$price','1')";
+		$sql="INSERT INTO `vehicle`(  `name`, `type`,`email`, `catagory`, `startDate`, `EndDate`, `image`,`price`, `prediction`, `status`) VALUES ( '$name','$type','$email','$catagory','$startDate','$EndDate','$image','$price','$prediction','1')";
 		
 		if($con->query($sql)){
 			
@@ -199,7 +228,7 @@ if(isset($_POST["submit"])){
 
 									<div class="col-md-6 form-group">
 										<label>Image</label>
-										<input type="file" class="form-control " name="fileToUpload" required />
+										<input type="file" class="form-control " name="fileToUpload" accept=".png, .jpg, .jpeg" required />
 									</div>
 
 									<div class="col-md-6 form-group">
