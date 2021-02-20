@@ -17,13 +17,6 @@
                             </div>
                         </div>
                         -->
-                        <div class="col-md-4 col-xs-12">
-                            <div class="social-footer">
-                                <ul class="social-icons social-icons-simple">
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                </ul>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -62,9 +55,20 @@
                             </div>
                         </div>
                         <!-- END CONTACT WIDGET -->
- 
-
                     </div>
+                    <hr>
+                        <!-- social media -->
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="social">
+                                <h6 class="montserrat text-uppercase bottom-line">We are on Social</h6>
+                                <ul class="icons-list">
+                                    <li><a href="https://www.facebook.com" class="fa fa-facebook"></a></li>
+                                    <li><a href="https://www.twitter.com" class="fa fa-twitter"></a></li>
+                                    <li><a href="https://www.linkedin.com" class="fa fa-linkedin"></a></li>
+                                    <li><a href="https://www.instagram.com" class="fa fa-instagram"></a></li>
+                            </div>
+                        </div>
+                        <!-- end social media -->
 
                     <!-- CONTACT WIDGET -->
                     <div class="copyright">
