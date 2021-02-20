@@ -110,7 +110,7 @@ if(isset($_POST["submit"])){
         // Make prediction by calling api /predict
          $.ajax({
 			type: 'POST',
-			url : "{{url_for('predict')}}",
+			url : "{{url_for('test')}}",
             data: {'data':form_data},
             cache: false,
 			processData: false,

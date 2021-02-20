@@ -5,3 +5,4 @@ workspace.code-workspace
 *.pyc
 Rice Disease Prediction/model_resnet.h5
 img
+*.h5
