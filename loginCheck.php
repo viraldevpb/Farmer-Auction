@@ -69,7 +69,7 @@
 				$_SESSION["msg"]=("registration Successfully done");
 				header('location:login.php?msg=Successfully Registered');
 
-				$base_url = "http://localhost/auction/";
+				$base_url = "http://localhost/Farmer-auction/";
 				$to = $email;
 				$subject = 'Email Verification';
 				$content = "
@@ -190,7 +190,7 @@
 				#$_SESSION["msg"]=("registration Successfully done");
 				header('location:login.php?msg=Successfully Registered');
 
-				$base_url = "http://localhost/auction/";
+				$base_url = "http://localhost/Farmer-auction/";
 				$to = $Femail;
 				$subject = 'Email Verification';
 				$content = "

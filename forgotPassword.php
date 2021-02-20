@@ -32,7 +32,7 @@ $resultF=$con->query($sqlF);
 
 	$_SESSION["code"] = substr(md5(uniqid(rand(),1)),3,10);
 			//echo($_SESSION["password"]);exit();
-	$message="your security code is <strong> ".$_SESSION["code"]."</strong><br>"."Please don't share your password with others."."http://localhost/auction/new_password.php?id=".$email;
+	$message="your security code is <strong> ".$_SESSION["code"]."</strong><br>"."Please don't share your password with others."."http://localhost/Farmer-auction/new_password.php?id=".$email;
 	$confirmMsg="Security code is send to your email.kindly check the mail";
 	
 sendmail($to,$subject,$message);

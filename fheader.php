@@ -7,7 +7,7 @@
 	 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 	}
-	 $_SESSION["directory"]="http://localhost/auction/";
+	 $_SESSION["directory"]="http://localhost/Farmer-auction/";
 	 if(!isset($_SESSION["isLogedIn"])){
 	 $_SESSION["isLogedIn"]=false;
 		 

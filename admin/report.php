@@ -365,7 +365,6 @@ while ($row = $resultR->fetch_array()) {
 </style>
 
 <div id="map"></div>;
-<div class="event-header">Event Logs</div>
 <div id="event-log"></div>
 			
 <script type="text/javascript">
