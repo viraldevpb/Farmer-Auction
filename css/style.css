@@ -1400,11 +1400,11 @@ ul.list-inline {
 .carousel-caption > h2 {
     font-family: "raleway";
     color: #fff;
-    font-size: 52px;
+    font-size: 30px;
     font-weight: 400;
     text-transform: uppercase;
     position: relative;
-    padding-bottom: 15px;
+    padding-bottom: 120px;
     -webkit-transform: scale(0.8);
     -ms-transform: scale(0.8);
     transform: scale(0.8);
