@@ -1,5 +1,5 @@
 # Farmer Auction
-## A web application to let farmer auction their crop online.
+## A web application to let farmers auction their crop online.
 
 ![](/img/brand/brand1.jpg)
 ## Stakeholders: 
