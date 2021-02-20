@@ -1,6 +1,6 @@
 # Farmer Auction
 A web application to let farmer auction their crop online.
-![](https://github.com/viraldevpb/Farmer-auction/tree/master/img/brand)
+![](https://github.com/viraldevpb/Farmer-auction/tree/master/img/brand1.jpg)
 ## Stakeholders: 
 Buyer, Administrator and Seller (farmer).
 
