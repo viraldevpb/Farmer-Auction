@@ -58,17 +58,22 @@ def model_predict(img_path, model):
     return preds
 
 
+'''
 @app.route('/', methods=['GET'])
 def index():
     # Main page
     return render_template('index.html')
+'''
 
 
 @app.route('/predict', methods=['GET', 'POST'])
 def upload():
     if request.method == 'POST':
         # Get the file from post request
-        f = request.files['file']
+        #f = request.files['file']
+        f = request.json['data']
+
+        print('request.json: ', f)
 
         # Save the file to ./uploads
         basepath = os.path.dirname(__file__)

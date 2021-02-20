@@ -107,23 +107,20 @@ if(isset($_POST["submit"])){
     //$('#btn-predict').click(function () {
 		var form_data = new FormData(<?php $target_file ?>);
 		
-		console.log('form data: ',form_data);
-
         // Make prediction by calling api /predict
          $.ajax({
-            type: 'POST',
-            url: 'http://localhost:5000/predict',
-            data: form_data,
-            contentType: false,
+			type: 'POST',
+			url : "{{url_for('predict')}}",
+            data: {'data':form_data},
             cache: false,
-            processData: false,
+			processData: false,
+  			contentType: 'application/json;charset=UTF-8',
+
             success: function (data) {
                 // Get and display the result
                 //$('.loader').hide();
                 //$('#result').fadeIn(600);
 				//$('#result').text(' Result:  ' + data);
-				prediction: data
-				alert(prediction),
                 console.log('Success!');
             },
 		});
@@ -150,7 +147,7 @@ if(isset($_POST["submit"])){
 		$type=$_REQUEST["type"];
 		$price=$_REQUEST["price"];
 		$image=$newName;
-		$prediction=$_POST['prediction'];
+		$prediction=$_POST['data'];
 
 		$sql="INSERT INTO `vehicle`(  `name`, `type`,`email`, `catagory`, `startDate`, `EndDate`, `image`,`price`, `prediction`, `status`) VALUES ( '$name','$type','$email','$catagory','$startDate','$EndDate','$image','$price','$prediction','1')";
 		
