@@ -30,6 +30,5 @@ Still in process! Bugs present.
 
 Currently developing farmer dashboard, so that farmer can add produce, rather than administrator, and let the administrator rectify, accept or reject the produce added. Also, thinking of improving ML.
 
-Video Link: https://drive.google.com/file/d/1iTRS2weAUV0kEfCMxNYScsVtgA5Z3-th/view?usp=sharing
 
 Any ideas / suggestions welcome!!
