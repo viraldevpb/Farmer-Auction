@@ -41,11 +41,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#mega-slider" role="button" data-slide="prev">
-                    </a>
-                    <a class="right carousel-control" href="#mega-slider" role="button" data-slide="next">
-                    </a>
                 </div>
             </section>
             <!-- END SLIDER -->
