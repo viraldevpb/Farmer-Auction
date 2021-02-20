@@ -54,7 +54,7 @@
                             <div class="widget">
                                 <h6 class="text-uppercase bottom-line">Contact Us</h6>
                                 <address>
-                                    <p>Atharva College of Engineering, Malad, Mumbai</p><br>
+                                    <p>Mumbai, India</p><br>
                                     <p>Phone: ##########</p>
                                     
                                     <p>E-mail: <a href="mailto:sid3345@gmail.com">###@gmail.com</a></p>
@@ -69,7 +69,7 @@
                     <!-- CONTACT WIDGET -->
                     <div class="copyright">
                         <div class="text-center">
-                            <p>© All Rights Reserved @ Siddharth And Aakash</p>
+                            <p>© All Rights Reserved @ Siddharth</p>
                         </div>
                     </div>
 
