@@ -24,13 +24,22 @@
                 <div class="container">
                     <div class="row">
                         <!-- CONTACT WIDGET -->
+                        <!-- Website logo -->
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="widget">
+                                <img src="favicon.ico" alt="Website logo">
+                            </div>
+                        </div>
+                        <!-- website logo end -->
                            <!-- CATEGORIES WIDGET -->
                         <div class="col-md-3 col-sm-6 col-xs-12">
                             <div class="widget">
                                 <h6 class="montserrat text-uppercase bottom-line">Quick Links</h6>
                                 <ul class="icons-list">
                                     <li><a href="#">Home</a></li>
-                               
+                                    <li><a href="/Farmer-auction/login.php">Login / Register</a></li>
+                                    <li><a href="/Farmer-auction/customer/veggie.php">Vegetables</a></li>
+                                    <li><a href="/Farmer-auction/customer/fruit.php">Fruits</a></li>
                                     <!--
                                     <li><a href="">Vehicles</a></li>
                                     <li><a href="#">About</a></li>
@@ -51,25 +60,26 @@
                             </div>
                         </div>
                         <!-- END CONTACT WIDGET -->
-                    </div>
-                    <hr>
                         <!-- social media -->
                         <div class="col-md-3 col-sm-6 col-xs-12">
                             <div class="social">
                                 <h6 class="montserrat text-uppercase bottom-line">We are on Social</h6>
                                 <ul class="icons-list">
-                                    <li><a href="https://www.facebook.com" class="fa fa-facebook"></a></li>
-                                    <li><a href="https://www.twitter.com" class="fa fa-twitter"></a></li>
-                                    <li><a href="https://www.linkedin.com" class="fa fa-linkedin"></a></li>
-                                    <li><a href="https://www.instagram.com" class="fa fa-instagram"></a></li>
+                                    <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+                                    <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+                                    <a href="https://www.linkedin.com" class="fa fa-linkedin"></a>
+                                    <a href="https://www.instagram.com" class="fa fa-instagram"></a>
                             </div>
                         </div>
                         <!-- end social media -->
 
+                    </div>
+                        
+
                     <!-- CONTACT WIDGET -->
                     <div class="copyright">
                         <div class="text-center">
-                            <p>© All Rights Reserved @ Siddharth</p>
+                            <p>© All Rights Reserved <a href="./index.php">Crop Auction</a></p>
                         </div>
                     </div>
 
