@@ -1,8 +1,8 @@
-# Farm-Auction
+# Farmer Auction
 A web application to let farmer auction their crop online.
 
 ## Stakeholders: 
-Buyer, Administrator and Seller (farmer) .
+Buyer, Administrator and Seller (farmer).
 
 ## User: 
 User needs to register and create an account to bid for various crops listed on the website. Each crop has an allotted
@@ -15,7 +15,7 @@ should be added. He also accepts payment from the buyer and thus allows him to b
 ## Seller (farmer):
 Seller also has to register and create an account. He can also add crop, and track the live bids on his crop.
 
-Domain: Web Development
+Domain: Web Development, Open Innovation, AI
 
 Programming language: PHP
 
