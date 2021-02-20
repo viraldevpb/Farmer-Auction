@@ -1,6 +1,6 @@
      <!-- Start Suvbscribe -->
            
-            <div class="news-subscribe">
+     <div class="news-subscribe">
                 <div class="container">
                     <div class="row">
                        <!-- 
@@ -13,7 +13,6 @@
                             </div>
                         </div>
                         -->
-                        </div>
                     </div>
                 </div>
             </div>
@@ -24,10 +23,11 @@
                 <div class="container">
                     <div class="row">
                         <!-- CONTACT WIDGET -->
-                        <!-- Website logo -->
+                        <!-- Website logso -->
                         <div class="col-md-3 col-sm-6 col-xs-12">
-                            <div class="widget">
-                                <img src="favicon.ico" alt="Website logo">
+                            <div class="website-logo">
+                                <img src="img/website-logo.png" alt="Website logo">
+                                <h6 class="caption">Crop Auction</h6>
                             </div>
                         </div>
                         <!-- website logo end -->
@@ -64,8 +64,8 @@
                         <div class="col-md-3 col-sm-6 col-xs-12">
                             <div class="social">
                                 <h6 class="montserrat text-uppercase bottom-line">We are on Social</h6>
-                                <ul class="icons-list">
-                                    <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+                                <ul class="social-icons1">
+                                    <a href="https://www.facebook.com" class="fa fa-facebook facebook"></a>
                                     <a href="https://www.twitter.com" class="fa fa-twitter"></a>
                                     <a href="https://www.linkedin.com" class="fa fa-linkedin"></a>
                                     <a href="https://www.instagram.com" class="fa fa-instagram"></a>

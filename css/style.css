@@ -1400,7 +1400,7 @@ ul.list-inline {
 .carousel-caption > h2 {
     font-family: "raleway";
     color: #fff;
-    font-size: 30px;
+    font-size: 52px;
     font-weight: 400;
     text-transform: uppercase;
     position: relative;
@@ -2760,6 +2760,8 @@ ul.list-inline {
 .news-subscribe .social-icons-simple{
     text-align: right;
 }
+
+
 @media (max-width: 990px) {
     .news-subscribe h3,.social-icons-simple {
         text-align: center;
@@ -2961,13 +2963,44 @@ ul.list-inline {
 /*------------------------------------------------*/
 /*--------------[FOOTER STYLE]-----------*/
 /*------------------------------------------------*/
+.website-logo{
+    width: 100%;
+}
+
+.caption {
+    font-size: 15px;
+    padding: 0 10px;
+}
+
+.social-icons1{
+    font-size: 20px;
+    display: inline-block;
+    list-style: outside none none;
+}
+
+.fa{
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    margin: 0 15px 0px 10px;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.website-logo img{
+    width: 100px;
+    margin: 27px;
+}
+
 .footer {
-    background-color: #fff;
+    background-color: #282b35;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 0;
     position: relative;
     padding: 60px 0 0;
+    color: white;
 }
 
 .footer .widget-title {
