@@ -3,10 +3,6 @@
             <div class="news-subscribe">
                 <div class="container">
                     <div class="row">
-                       
-                        <div class="col-md-4">
-                            <h3>Thanks to <strong>visit Crop Auction</strong></h3>
-                        </div>
                        <!-- 
                         <div class="col-md-4 newsletter-form-block">
                             <div class="input-group">
