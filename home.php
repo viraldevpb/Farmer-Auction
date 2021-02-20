@@ -41,6 +41,8 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Controls -->
+                    
                 </div>
             </section>
             <!-- END SLIDER -->

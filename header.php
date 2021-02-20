@@ -70,48 +70,8 @@
 <body>
            <!-- Header -->
             <div class="header header-static">
-                <!-- Topbar -->
-                <div class="topbar">
-
-                    <div class="container">
-                        <div class="row">
-                            
-                            <div class="col-sm-12">
-                            <div class="col-xs-3 custom-col-left form-group">
-                            <div class="spa-search">
-                                <form action="<?=$_SESSION["directory"]?>customer/cropsearch.php" method="post">
-                                    <input type="text" placeholder="Search Crop ..." value="" class="form-control input-group-lg" style="width: 100%" name="Search">
-                                    
-                                </form>
-                                
-                            </div>
-                            </div>
-
-                                <ul class="list-inline topbar-right pull-right">
-                                    <li>
-                                    
-                                      <?php   if((isset($_SESSION["isLogedIn"]) && $_SESSION["isLogedIn"]==true) &&(isset($_SESSION["role"]) && $_SESSION["role"]=="0")){ ?>  
-                                       <a href="<?=$_SESSION["directory"]?>customer/profile.php">Account</a>
-                                     <?php  } ?>
-                                    </li>
-                                    
-                                    <li>
-                                    <?php
-										if((isset($_SESSION["isLogedIn"]) && $_SESSION["isLogedIn"]==true)){ ?>
-											<a href="<?=$_SESSION["directory"]?>logout.php" onclick="return confirm_alert(this);">Logout (<?php if(isset($_SESSION["username"])){echo($_SESSION["username"]);} ?>)</a>
-									<?php	}else{ ?>
-									 
-                                    <a href="<?=$_SESSION["directory"]?>./login.php">Login / Register</a> </li>
-                                    <?php } ?>
-                                </ul>
-                            </div>
-                        </div>
-                    </div><!--container-->
-                </div>
-                <!-- End Topbar -->
-
-                <!-- Navbar -->
-                <div class="navbar navbar-default mega-menu" role="navigation" style="background-color: white;">
+            <!-- Navbar -->
+            <div class="navbar navbar-default mega-menu" role="navigation" style="background-color: white;">
                     <div class="container">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".cd-navbar-collapse">
@@ -126,7 +86,7 @@
                         </div>
 
                         <!-- Shopping Cart -->
-                        <div class="shop-badge badge-icons pull-right">
+                        <!-- <div class="shop-badge badge-icons pull-right">
                             <a href="#"><i class="fa fa"> <img style="width: 30px" src="<?=$_SESSION["directory"]?>img/icon/notification.png" ></i></a>
                                <?php
 								if((isset($_SESSION["isLogedIn"]) && $_SESSION["isLogedIn"]==true) &&(isset($_SESSION["role"]) && $_SESSION["role"]=="0")){ ?>
@@ -136,7 +96,7 @@
 								 
                                 <ul class="list-unstyled mCustomScrollbar" data-mcs-theme="minimal-dark" id="watchlist">
                               
-								<!-- ajax use here -->
+								ajax use here
                                 </ul> </div>
                                 <?php } ?>
                            <?php
@@ -148,13 +108,31 @@
 								 <a onClick="clearall()">clear all</a>
                                 <ul class="list-unstyled mCustomScrollbar" data-mcs-theme="minimal-dark" id="notification">
                               
-								<!-- ajax use here -->
+								 ajax use here
 								</ul>
                                </div>
                                 <?php } ?>
                            
-                        </div>
+                        </div> -->
                         <!-- End Shopping Cart -->
+                        <!-- logout function -->
+                        <ul class="list-inline topbar-right pull-right">
+                                    <li>
+                                         <?php   if((isset($_SESSION["isLogedIn"]) && $_SESSION["isLogedIn"]==true) &&(isset($_SESSION["role"]) && $_SESSION["role"]=="0")){ ?>  
+                                       <a href="<?=$_SESSION["directory"]?>customer/profile.php">Account</a>
+                                     <?php  } ?>
+                                    </li>
+                                    
+                                    <li>
+                                    <?php
+										if((isset($_SESSION["isLogedIn"]) && $_SESSION["isLogedIn"]==true)){ ?>
+											<a class="logout" href="<?=$_SESSION["directory"]?>logout.php" onclick="return confirm_alert(this);">Logout (<?php if(isset($_SESSION["username"])){echo($_SESSION["username"]);} ?>)</a>
+									<?php	}else{ ?>
+									 
+                                    <a class="login" href="<?=$_SESSION["directory"]?>./login.php">Login</a> </li>
+                                    <?php } ?>
+                                </ul>
+                        <!-- end logout function -->
 
                         <div class="collapse navbar-collapse cd-navbar-collapse">
                             <!-- Nav Menu -->
@@ -214,6 +192,23 @@
                                     </a>
                                      
                                 </li> 
+                                <li class="dropdown">
+                                    <a href="javascript:void(0);" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">
+                                        Register
+                                    </a>
+                                    <ul class="dropdown-menu">
+										<?php
+										if((isset($_SESSION["isLogedIn"]) && $_SESSION["isLogedIn"]==true) &&(isset($_SESSION["role"]) && $_SESSION["role"]=="1")){ ?>
+									 
+                                       <li><a href="<?=$_SESSION["admin"]?>./login.php">Farmer</a></li>
+                                        <li><a href="<?=$_SESSION["directory"]?>./login.php">Buyer</a></li>
+                                       <?php }else{  ?>
+                                        <li><a href="<?=$_SESSION["directory"]?>farmer/fprofile.php">Farmer</a></li>
+                                        <li><a href="<?=$_SESSION["directory"]?>customer/profile.php">Buyer</a></li>
+                                        <?php } ?>
+                                    </ul>
+                                </li>
+                                <!-- End Pages -->
                                 <?php
 									if((isset($_SESSION["isLogedIn"]) && $_SESSION["isLogedIn"]==true) &&(isset($_SESSION["role"]) && $_SESSION["role"]!="1")){ ?>
                                  <li class="btn-product">
@@ -263,7 +258,32 @@
                     </div>
                 </div>
                 <!-- End Navbar -->
-            </div>
+
+                <!-- Topbar -->
+                <div class="topbar">
+
+                    <div class="container">
+                        <div class="row">
+                            
+                            <div class="col-sm-12">
+                            <div class="col-xs-3 custom-col-left form-group">
+                            <div class="spa-search">
+                                <form action="<?=$_SESSION["directory"]?>customer/cropsearch.php" method="post">
+                                    <input type="text" placeholder="Search Crop ..." value="" class="form-control input-group-lg" style="width: 100%" name="Search">
+                                    
+                                </form>
+                                
+                            </div>
+                            </div>
+
+                                
+                            </div>
+                        </div>
+                    </div><!--container-->
+                </div>
+              <!-- End Topbar -->
+
+                            </div>
             <!-- End Header-->
             
      <script>

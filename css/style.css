@@ -245,9 +245,9 @@ ul.list-inline {
 /*------------------------------------------------*/
 .topbar {
     z-index: 99;
-    padding: 7px 0;
+    padding: 8px 0;
     position: relative;
-    background: rgb(19, 130, 148);
+    /* background: rgb(19, 130, 148); */
 }
 .header-fixed .header.header-fixed-shrink .topbar {
     padding: 0;
@@ -2557,6 +2557,22 @@ ul.list-inline {
 /*------------------------------------------------*/
 /*--------------[LOGIN/REGISTRE STYLE]-----------*/
 /*------------------------------------------------*/
+
+.login{
+    display: inline-block;
+    padding-top: 9px;
+    background-color: rgb(19, 130, 148);
+    color: white;
+    padding-left: 30px;
+    margin-top: 20px;
+    padding-right: 26px;
+    padding-bottom: 10px;
+}
+
+.logout {
+    display: inline-block;
+    padding-top: 35px;
+}
 
 .login-header {
     display: inline-block;
