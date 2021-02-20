@@ -1,24 +1,22 @@
 from __future__ import division, print_function
+import tensorflow as tf
 from gevent.pywsgi import WSGIServer
 from werkzeug.utils import secure_filename
+# Flask utils
 from flask import Flask, redirect, url_for, request, render_template
+# Keras
 from keras.preprocessing import image
 from tensorflow.keras.models import load_model
 from keras.applications.imagenet_utils import preprocess_input, decode_predictions
 from keras.applications.resnet50 import ResNet50
 
-import tensorflow as tf
-# coding=utf-8
+
 import sys
 import os
 import glob
 import re
 import numpy as np
 
-
-# Keras
-
-# Flask utils
 
 print(tf.__version__)
 
@@ -36,8 +34,6 @@ graph = tf.get_default_graph()
 with graph.as_default():
     labels = model.predict(data)
 '''
-# print('Model loaded. Start serving...')
-
 
 # model = ResNet50(weights='imagenet')
 # model.save(MODEL_PATH)
@@ -58,18 +54,20 @@ def model_predict(img_path, model):
     return preds
 
 
+'''
 @app.route('/', methods=['GET'])
 def index():
     # Main page
     return render_template('index.html')
+'''
 
 
 @app.route('/predict', methods=['GET', 'POST'])
 def upload():
     if request.method == 'POST':
         # Get the file from post request
-        f = request.files['file']
-        #f = request.json['data']
+        #f = request.files['file']
+        f = request.json['data']
 
         print('request.json: ', f)
 
@@ -91,7 +89,7 @@ def upload():
         # Process your result for human
         # pred_class = preds.argmax(axis=-1)            # Simple argmax
         pred_class = decode_predictions(preds, top=1)  # ImageNet Decode
-        result = str(pred_class[0][0][1])  # Convert to string
+        result = str(pred_class[0][0][1])              # Convert to string
         return result
     return None
 
