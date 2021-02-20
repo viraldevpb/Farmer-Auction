@@ -4,3 +4,4 @@ workspace.code-workspace
 .mypy_cache
 *.pyc
 Rice Disease Prediction/model_resnet.h5
+img
