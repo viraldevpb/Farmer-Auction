@@ -105,18 +105,18 @@ if(isset($_POST["submit"])){
 		<script>
     // Predict
     //$('#btn-predict').click(function () {
+		var form_data = new FormData(<?php $target_file ?>);
 		
-        var form_data = new FormData(<?php $target_file ?>);
+		console.log('form data: ',form_data);
 
         // Make prediction by calling api /predict
-        $.ajax({
+         $.ajax({
             type: 'POST',
             url: 'http://localhost:5000/predict',
             data: form_data,
             contentType: false,
             cache: false,
             processData: false,
-            async: false,
             success: function (data) {
                 // Get and display the result
                 //$('.loader').hide();
@@ -127,6 +127,7 @@ if(isset($_POST["submit"])){
                 console.log('Success!');
             },
 		});
+
 	//});
 	</script>
 	<?php
